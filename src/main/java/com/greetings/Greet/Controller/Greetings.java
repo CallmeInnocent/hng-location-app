@@ -19,10 +19,10 @@ public class Greetings {
     private GreetingsService greetings;
 
     @GetMapping("/hello")
-    public VisitorsResponseDTO visitorsResponse(@RequestParam String visitorsName, HttpServletRequest httpServletRequest){
+    public VisitorsResponseDTO visitorsResponse(@RequestParam String visitor_name, HttpServletRequest httpServletRequest){
 
 
-        return greetings.visitorsResponse(visitorsName, httpServletRequest);
+        return greetings.visitorsResponse(visitor_name, httpServletRequest);
     }
 
 }
