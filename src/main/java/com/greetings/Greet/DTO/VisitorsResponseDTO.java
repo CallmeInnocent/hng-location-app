@@ -10,9 +10,9 @@ import lombok.NoArgsConstructor;
 public class VisitorsResponseDTO {
 
     private String clientIP;
+    private String location;
     private String greetings;
-    private String city;
-    private Double temperature;
+    //private Double temperature;
 
 
 
