@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class VisitorsResponseDTO {
 
-    private String clientIP;
+    private String client_Ip;
     private String location;
-    private String greetings;
+    private String greeting;
     //private Double temperature;
 
 

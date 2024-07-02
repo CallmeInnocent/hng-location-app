@@ -40,14 +40,14 @@ public class GreetingsImpl implements GreetingsService {
         //String location = "You are currently in";
 
 
-        visitorsResponseDTO.setClientIP(ipAddress);
+        visitorsResponseDTO.setClient_Ip(ipAddress);
         visitorsResponseDTO.setLocation(weatherResponseDTO.getCity());
         //visitorsResponseDTO.setTemperature(weatherResponseDTO.getTemperature());
 
         String message = "Hello, "+name+"!, the temperature is "
                 +weatherResponseDTO.getTemperature()+" degrees Celsius in " +visitorsResponseDTO.getLocation();
 
-        visitorsResponseDTO.setGreetings(message);
+        visitorsResponseDTO.setGreeting(message);
 
         return visitorsResponseDTO;
     }
